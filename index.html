@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>VoltCart – Electronic Accessories Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Icons (Remix Icon) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="topbar-left">
+            <span><i class="ri-truck-line"></i> Free shipping on orders above ₹999</span>
+        </div>
+        <div class="topbar-right">
+            <span><i class="ri-phone-line"></i> +91-98765-43210</span>
+            <span><i class="ri-mail-line"></i> support@voltcart.in</span>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="logo">
+            <i class="ri-flashlight-line"></i>
+            <span>VoltCart</span>
+        </div>
+        <nav class="nav">
+            <a href="#hero">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#why">Why Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="cart-button" id="cart-toggle">
+            <i class="ri-shopping-cart-2-line"></i>
+            <span>Cart</span>
+            <span class="cart-count-badge" id="cart-count">0</span>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <p class="hero-badge"><i class="ri-star-smile-line"></i> Premium Electronic Accessories</p>
+                <h1>Power up your tech with <span>VoltCart</span></h1>
+                <p class="hero-subtitle">
+                    High‑quality earphones, chargers, power banks and more – delivered across India.
+                    Secure COD available on all orders.
+                </p>
+                <div class="hero-actions">
+                    <a href="#shop" class="btn-primary">Shop Now</a>
+                    <a href="#why" class="btn-ghost">Why choose us?</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>10K+</strong>
+                        <span>Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <strong>48H</strong>
+                        <span>Avg. Delivery Time</span>
+                    </div>
+                    <div class="stat">
+                        <strong>4.8/5</strong>
+                        <span>Customer Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-card">
+                    <img src="https://images.pexels.com/photos/159643/cable-plug-connection-network-159643.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Electronic Accessories" />
+                    <div class="hero-card-badge">
+                        <i class="ri-shield-check-line"></i> 6 Month Warranty
+                    </div>
+                    <div class="hero-card-floating">
+                        <i class="ri-flashlight-fill"></i>
+                        <div>
+                            <p>Fast Charging</p>
+                            <span>PD / QC3.0 Supported</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why" class="section">
+        <div class="section-header">
+            <h2>Why shop from VoltCart?</h2>
+            <p>Handpicked accessories with strict quality checks and quick support.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="ri-shield-check-line"></i>
+                <h3>Genuine Quality</h3>
+                <p>All products tested for durability, safety and performance before listing.</p>
+            </div>
+            <div class="feature-card">
+                <i class="ri-cash-line"></i>
+                <h3>COD Available</h3>
+                <p>Pay safely with Cash on Delivery anywhere in India, no hidden charges.</p>
+            </div>
+            <div class="feature-card">
+                <i class="ri-truck-line"></i>
+                <h3>Fast Delivery</h3>
+                <p>Orders shipped within 24 hours with live tracking updates on SMS.</p>
+            </div>
+            <div class="feature-card">
+                <i class="ri-customer-service-2-line"></i>
+                <h3>Dedicated Support</h3>
+                <p>Easy replacement and quick response over WhatsApp, call and email.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop / Products -->
+    <section id="shop" class="section section-shop">
+        <div class="section-header header-with-controls">
+            <div>
+                <h2>Shop Electronic Accessories</h2>
+                <p>Earphones, chargers, power banks, cables, covers and more.</p>
+            </div>
+            <div class="shop-controls">
+                <div class="search-box">
+                    <i class="ri-search-line"></i>
+                    <input type="text" id="search-input" placeholder="Search products..." />
+                </div>
+                <select id="sort-select">
+                    <option value="default">Sort: Featured</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="product-list" class="product-grid">
+            <!-- Products injected via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Cart Drawer -->
+    <aside id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3><i class="ri-shopping-cart-2-line"></i> Your Cart</h3>
+            <button id="cart-close" class="icon-button" aria-label="Close cart">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Cart items via JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total-row">
+                <span>Total</span>
+                <strong>₹<span id="cart-total">0</span></strong>
+            </div>
+            <p class="cod-info"><i class="ri-information-line"></i> Payment on delivery (COD) only.</p>
+            <button id="checkout-btn" class="btn-primary btn-full">Checkout (COD)</button>
+        </div>
+    </aside>
+
+    <!-- COD Order Modal -->
+    <div id="order-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Place Order (Cash on Delivery)</h2>
+                <button type="button" id="close-modal" class="icon-button">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+
+            <form id="order-form">
+                <div class="modal-body">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="cust-name" placeholder="Your full name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Mobile Number</label>
+                            <input type="tel" id="cust-phone" placeholder="10-digit mobile" required pattern="[0-9]{10}" />
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label>Address</label>
+                            <textarea id="cust-address" rows="3" placeholder="House no, street, area" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Pincode</label>
+                            <input type="text" id="cust-pincode" placeholder="6-digit pincode" required pattern="[0-9]{6}" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>City</label>
+                            <input type="text" id="cust-city" placeholder="City / Town" required />
+                        </div>
+                    </div>
+
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div id="order-summary-items" class="order-summary-items"></div>
+                        <p class="order-total">Total: ₹<span id="order-summary-total">0</span></p>
+                        <p class="cod-note"><i class="ri-cash-line"></i> Payment method: Cash on Delivery (COD)</p>
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" id="cancel-order" class="btn-secondary">Cancel</button>
+                    <button type="submit" class="btn-primary">Confirm Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden"></div>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h3>VoltCart</h3>
+                <p>Your trusted store for premium electronic accessories across India.</p>
+                <p class="footer-copy">© <span id="year"></span> VoltCart. All rights reserved.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="ri-phone-line"></i> +91-98765-43210</p>
+                <p><i class="ri-mail-line"></i> support@voltcart.in</p>
+                <p><i class="ri-map-pin-line"></i> Mumbai, Maharashtra, India</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-facebook-circle-line"></i></a>
+                    <a href="#"><i class="ri-whatsapp-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
