@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>rich.org – Luxury Tech Accessories</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Outer glow frame -->
+    <div class="page-frame">
+        <!-- Top strip -->
+        <div class="top-strip">
+            <span><i class="ri-vip-crown-line"></i> VIP Express Delivery on orders above ₹4,999</span>
+            <span class="top-strip-right"><i class="ri-phone-line"></i> +91‑90090‑RICH</span>
+        </div>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="brand">
+                <div class="brand-mark">R</div>
+                <div class="brand-text">
+                    <span class="brand-name">rich.org</span>
+                    <span class="brand-tagline">Curated Luxury Tech</span>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <a href="#hero">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#shop">Shop</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" id="theme-toggle" title="Toggle theme">
+                    <i class="ri-moon-line"></i>
+                </button>
+                <button class="cart-btn" id="cart-toggle">
+                    <i class="ri-shopping-bag-3-line"></i>
+                    <span class="cart-label">Cart</span>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <div class="hero-layout">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span></span>Limited Drop • Signature Series</p>
+                    <h1>Luxury tech accessories for the <span>rich.org</span> lifestyle.</h1>
+                    <p class="hero-sub">
+                        Noise‑canceling audio, carbon‑fiber power banks, titanium‑grade cables.
+                        Hand‑picked gear that feels as premium as it looks.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#shop" class="btn btn-primary">
+                            Shop the Collection
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                        <button class="btn btn-ghost" onclick="document.getElementById('collections').scrollIntoView({behavior:'smooth'})">
+                            Explore story
+                        </button>
+                    </div>
+                    <div class="hero-metrics">
+                        <div>
+                            <span class="metric-num">24K+</span>
+                            <span class="metric-label">Collectors worldwide</span>
+                        </div>
+                        <div>
+                            <span class="metric-num">4.9</span>
+                            <span class="metric-label">Average rating</span>
+                        </div>
+                        <div>
+                            <span class="metric-num">48h</span>
+                            <span class="metric-label">Pan‑India dispatch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-showcase">
+                    <div class="hero-orbit">
+                        <div class="orbit-glow"></div>
+                        <div class="hero-card">
+                            <div class="hero-card-top">
+                                <span class="chip">Signature ANC</span>
+                                <span class="chip chip-gold"><i class="ri-shield-check-line"></i> 2‑Year cover</span>
+                            </div>
+                            <img src="https://images.pexels.com/photos/7889463/pexels-photo-7889463.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Signature ANC Earphones" />
+                            <div class="hero-card-body">
+                                <div>
+                                    <h3>RS‑01 Obsidian Earset</h3>
+                                    <p>Adaptive ANC • LDAC • Wireless charging case</p>
+                                </div>
+                                <div class="hero-price">
+                                    <span>₹7,999</span>
+                                    <span class="hero-subprice">MRP ₹11,999</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-float hero-float-left">
+                            <i class="ri-flashlight-fill"></i>
+                            <div>
+                                <p>GaN Fast‑Charge</p>
+                                <span>0‑50% in 18 minutes</span>
+                            </div>
+                        </div>
+                        <div class="hero-float hero-float-right">
+                            <i class="ri-vip-diamond-line"></i>
+                            <div>
+                                <p>Member only drop</p>
+                                <span>Batch #07 / 500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collection highlights -->
+        <section id="collections" class="section section-collections">
+            <div class="section-head">
+                <h2>Curated tiers for every collection.</h2>
+                <p>From daily essentials to vault‑grade collectibles, rich.org selects only the top 1% products.</p>
+            </div>
+            <div class="tiers">
+                <article class="tier-card">
+                    <div class="tier-label">Essentials</div>
+                    <h3>Everyday Luxe</h3>
+                    <p>UPI‑friendly pricing, premium feel. Perfect for upgrading your daily carry.</p>
+                    <ul>
+                        <li>Aluminium cables & cases</li>
+                        <li>12‑month limited warranty</li>
+                        <li>Same‑day dispatch on select pin codes</li>
+                    </ul>
+                </article>
+                <article class="tier-card tier-card-mid">
+                    <div class="tier-label">Signature</div>
+                    <h3>Collector’s Cut</h3>
+                    <p>Hyper‑limited drops with engraved serials and concierge‑level support.</p>
+                    <ul>
+                        <li>2‑year replacement coverage</li>
+                        <li>Hand‑finished accessories</li>
+                        <li>Priority COD & white‑glove delivery</li>
+                    </ul>
+                </article>
+                <article class="tier-card">
+                    <div class="tier-label">Archive</div>
+                    <h3>Vault Editions</h3>
+                    <p>Future‑iconic pieces that appreciate over time. Stored & shipped like art.</p>
+                    <ul>
+                        <li>Numbered authenticity card</li>
+                        <li>Climate‑controlled warehousing</li>
+                        <li>Invite‑only access list</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Shop -->
+        <section id="shop" class="section section-shop">
+            <div class="section-head shop-head">
+                <div>
+                    <h2>Shop rich.org accessories</h2>
+                    <p>Flagship essentials from the Signature and Essentials tiers.</p>
+                </div>
+                <div class="shop-controls">
+                    <div class="search">
+                        <i class="ri-search-line"></i>
+                        <input id="search-input" type="text" placeholder="Search by name or category..." />
+                    </div>
+                    <select id="sort-select">
+                        <option value="default">Sort: Featured</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="product-list" class="product-grid">
+                <!-- JS fills products -->
+            </div>
+        </section>
+
+        <!-- Cart Drawer -->
+        <aside id="cart-drawer" class="cart-drawer">
+            <header class="cart-header">
+                <div>
+                    <h3>Your selection</h3>
+                    <p>COD available on all Indian pin codes.</p>
+                </div>
+                <button id="cart-close" class="icon-btn">
+                    <i class="ri-close-line"></i>
+                </button>
+            </header>
+            <div id="cart-items" class="cart-items">
+                <!-- JS fills cart items -->
+            </div>
+            <footer class="cart-footer">
+                <div class="cart-total-row">
+                    <span>Subtotal</span>
+                    <span class="cart-total-amount">₹<span id="cart-total">0</span></span>
+                </div>
+                <p class="cart-note"><i class="ri-cash-line"></i> Payment at your doorstep (Cash on Delivery).</p>
+                <button id="checkout-btn" class="btn btn-primary btn-full">Checkout with COD</button>
+            </footer>
+        </aside>
+
+        <!-- COD Order Modal -->
+        <div id="order-modal" class="modal hidden">
+            <div class="modal-inner">
+                <header class="modal-header">
+                    <div>
+                        <h3>Confirm your rich.org order</h3>
+                        <p>COD • Secure doorstep delivery</p>
+                    </div>
+                    <button id="close-modal" class="icon-btn">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </header>
+
+                <form id="order-form">
+                    <div class="modal-body">
+                        <div class="form-layout">
+                            <div class="form-group">
+                                <label>Full name</label>
+                                <input id="cust-name" type="text" placeholder="Your full legal name" required />
+                            </div>
+                            <div class="form-group">
+                                <label>Mobile number</label>
+                                <input id="cust-phone" type="tel" placeholder="10‑digit mobile" pattern="[0-9]{10}" required />
+                            </div>
+                            <div class="form-group full">
+                                <label>Address</label>
+                                <textarea id="cust-address" rows="3" placeholder="Apartment, street, area" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Pincode</label>
+                                <input id="cust-pincode" type="text" placeholder="6‑digit pincode" pattern="[0-9]{6}" required />
+                            </div>
+                            <div class="form-group">
+                                <label>City</label>
+                                <input id="cust-city" type="text" placeholder="City / Town" required />
+                            </div>
+                        </div>
+
+                        <div class="order-summary">
+                            <div class="order-summary-head">
+                                <h4>Order summary</h4>
+                                <span class="order-tag">COD</span>
+                            </div>
+                            <div id="order-summary-items" class="order-items"></div>
+                            <div class="order-total-row">
+                                <span>Total</span>
+                                <span>₹<span id="order-summary-total">0</span></span>
+                            </div>
+                            <p class="order-note"><i class="ri-shield-check-line"></i> You’ll pay in cash when the package arrives.</p>
+                        </div>
+                    </div>
+
+                    <footer class="modal-footer">
+                        <button type="button" id="cancel-order" class="btn btn-ghost">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Place COD order</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+
+        <!-- Toast -->
+        <div id="toast" class="toast hidden"></div>
+
+        <!-- Footer -->
+        <footer id="contact" class="footer">
+            <div class="footer-layout">
+                <div>
+                    <div class="brand">
+                        <div class="brand-mark">R</div>
+                        <div class="brand-text">
+                            <span class="brand-name">rich.org</span>
+                            <span class="brand-tagline">Objects of desire.</span>
+                        </div>
+                    </div>
+                    <p class="footer-copy">© <span id="year"></span> rich.org collective. All rights reserved.</p>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p><i class="ri-mail-line"></i> concierge@rich.org</p>
+                    <p><i class="ri-phone-line"></i> +91‑90090‑RICH</p>
+                    <p><i class="ri-map-pin-2-line"></i> BKC, Mumbai, India</p>
+                </div>
+                <div>
+                    <h4>Social</h4>
+                    <div class="social-row">
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                        <a href="#"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#"><i class="ri-whatsapp-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
